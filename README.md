@@ -2,13 +2,13 @@
 
 > **Kampüsün Sosyal Medyası** — Üniversiteliler için sosyalleşme ve etkinlik platformu.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-https%3A%2F%2Fcampusgo.app-5D5DBC?style=for-the-badge&logo=link)](https://campusgo.app)
+[Live](https://campusgo.app)
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel%20%7C%20Hostinger-000?style=flat-square&logo=vercel)](https://vercel.com/)
+[React](https://react.dev/)
+[Vite](https://vitejs.dev/)
+[Tailwind CSS](https://tailwindcss.com/)
+[Framer Motion](https://www.framer.com/motion/)
+[Vercel](https://vercel.com/)
 
 ---
 
@@ -24,12 +24,14 @@
 
 ## ✨ Öne Çıkan Özellikler
 
-| Özellik | Açıklama |
-|--------|----------|
-| **🎯 Akıllı Eşleşme** | İlgi alanları, bölüm ve kampüse göre arkadaş önerisi ve eşleşme. |
-| **🗺️ Kampüs Keşfi** | Etkinlikler, popüler profiller ve kampüs odaklı keşif deneyimi. |
-| **🖼️ Modern UI/UX** | Glassmorphism, split-screen tanıtım kartları ve akıcı animasyonlar. |
+
+| Özellik                 | Açıklama                                                                |
+| ----------------------- | ----------------------------------------------------------------------- |
+| **🎯 Akıllı Eşleşme**   | İlgi alanları, bölüm ve kampüse göre arkadaş önerisi ve eşleşme.        |
+| **🗺️ Kampüs Keşfi**    | Etkinlikler, popüler profiller ve kampüs odaklı keşif deneyimi.         |
+| **🖼️ Modern UI/UX**    | Glassmorphism, split-screen tanıtım kartları ve akıcı animasyonlar.     |
 | **🔒 Güvenli İletişim** | Üniversite e-posta doğrulaması odaklı, güvenli sosyal platform vurgusu. |
+
 
 ---
 
@@ -61,12 +63,14 @@
 
 ## 🧩 Teknoloji Yığını
 
-| Kategori | Teknolojiler |
-|----------|--------------|
-| **Frontend** | React 19, Vite 7, React Router DOM |
-| **Styling** | Tailwind CSS 4, Lucide React (ikonlar) |
-| **SEO** | React Helmet Async |
+
+| Kategori      | Teknolojiler                               |
+| ------------- | ------------------------------------------ |
+| **Frontend**  | React 19, Vite 7, React Router DOM         |
+| **Styling**   | Tailwind CSS 4, Lucide React (ikonlar)     |
+| **SEO**       | React Helmet Async                         |
 | **Animasyon** | Framer Motion, CSS transitions & keyframes |
+
 
 ---
 
