@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* CampusGo renk paleti - Logo ile uyumlu (indigo → lavanta) */
+@theme {
+  --color-campusgo-indigo: #5D5DBC;
+  --color-campusgo-indigo-dark: #4f4fa8;
+  --color-campusgo-lavender: #8E8ECF;
+  --color-campusgo-lavender-light: #b5b5e3;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    @apply antialiased text-gray-800 bg-gray-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #5D5DBC 0%, #8E8ECF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #e8e8f5 0%, #f0eff8 50%, #e8e8f5 100%);
+}
+
+.navbar-glass {
+  @apply backdrop-blur-xl bg-white/80 border-b border-gray-200/50;
+}
