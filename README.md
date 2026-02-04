@@ -2,13 +2,13 @@
 
 > **Kampüsün Sosyal Medyası** — Üniversiteliler için sosyalleşme ve etkinlik platformu.
 
-[Live](https://campusgo.app)
+[![Live](https://img.shields.io/badge/Live-campusgo.app-5D5DBC?style=for-the-badge&logo=link&logoColor=white)](https://campusgo.app)
 
-[React](https://react.dev/)
-[Vite](https://vitejs.dev/)
-[Tailwind CSS](https://tailwindcss.com/)
-[Framer Motion](https://www.framer.com/motion/)
-[Vercel](https://vercel.com/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000?style=flat-square&logo=vercel)](https://vercel.com/)
 
 ---
 
