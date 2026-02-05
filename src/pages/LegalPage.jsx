@@ -6,17 +6,18 @@ import SEO from "../components/SEO";
 import Navbar from "../components/Navbar";
 import { legalSections } from "../data/legalContent";
 
-function LegalContentText({ content }) {
+function LegalContentText({ content, className = "" }) {
+  if (!content) return null;
   const paragraphs = content.split(/\n\n+/).filter(Boolean);
   return (
-    <div className="space-y-4 text-gray-700 leading-relaxed">
+    <div className={`space-y-4 leading-relaxed ${className}`}>
       {paragraphs.map((para, i) => {
         const parts = para.split(/(\*\*[^*]+\*\*)/g);
         return (
           <p key={i} className="mb-4 last:mb-0">
             {parts.map((part, j) => {
               if (part.startsWith("**") && part.endsWith("**")) {
-                return <strong key={j} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>;
+                return <strong key={j} className="font-semibold text-inherit opacity-90">{part.slice(2, -2)}</strong>;
               }
               const lines = part.split("\n");
               return (
@@ -79,7 +80,7 @@ export default function LegalPage() {
                     }}
                     className={`block px-4 py-3 rounded-xl text-left text-sm font-medium transition-colors ${activeId === section.id ? "bg-[#5D5DBC] text-white" : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"}`}
                   >
-                    {section.title}
+                    {section.titleEn ? `${section.title} / ${section.titleEn}` : section.title}
                   </a>
                 ))}
               </nav>
@@ -88,11 +89,39 @@ export default function LegalPage() {
           <article className="flex-1 min-w-0">
             <AnimatePresence mode="wait">
               <motion.div key={activeSection.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }} className="rounded-2xl bg-white border border-gray-200 shadow-sm overflow-hidden">
-                <div className="p-6 sm:p-8 md:p-10 border-b border-gray-100">
-                  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">{activeSection.title}</h1>
+                <div className="p-6 sm:p-8 md:p-10 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                    {activeSection.titleEn ? `${activeSection.title} / ${activeSection.titleEn}` : activeSection.title}
+                  </h1>
+                  <div className="flex gap-2">
+                    <a
+                      href="#legal-tr"
+                      onClick={(e) => { e.preventDefault(); document.getElementById("legal-tr")?.scrollIntoView({ behavior: "smooth" }); }}
+                      className="px-4 py-2 rounded-lg text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+                    >
+                      Türkçe
+                    </a>
+                    <a
+                      href="#legal-en"
+                      onClick={(e) => { e.preventDefault(); document.getElementById("legal-en")?.scrollIntoView({ behavior: "smooth" }); }}
+                      className="px-4 py-2 rounded-lg text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+                    >
+                      English
+                    </a>
+                  </div>
                 </div>
                 <div className="p-6 sm:p-8 md:p-10 prose prose-gray max-w-none">
-                  <LegalContentText content={activeSection.content} />
+                  <div id="legal-tr" className="scroll-mt-4 text-gray-700">
+                    <LegalContentText content={activeSection.content} />
+                  </div>
+                  {activeSection.contentEn && (
+                    <>
+                      <hr className="my-8 border-gray-200" />
+                      <div id="legal-en" className="scroll-mt-4 text-[#666]" style={{ color: "#666" }}>
+                        <LegalContentText content={activeSection.contentEn} className="text-[#666]" />
+                      </div>
+                    </>
+                  )}
                 </div>
               </motion.div>
             </AnimatePresence>

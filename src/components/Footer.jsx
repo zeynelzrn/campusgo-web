@@ -10,17 +10,19 @@ const footerLinks = [
 ];
 
 const legalLinks = [
-  { to: "/yasal", hash: "#kvkk", label: "KVKK" },
+  { to: "/yasal", hash: "#kvkk", label: "KVKK Aydınlatma Metni" },
   { to: "/yasal", hash: "#gizlilik", label: "Gizlilik Politikası" },
-  { to: "/yasal", hash: "#acik-riza", label: "Açık Rıza" },
-  { to: "/yasal", hash: "#cerez", label: "Çerez Politikası" },
   { to: "/yasal", hash: "#kullanim", label: "Kullanıcı Sözleşmesi" },
+  { to: "/yasal", hash: "#ticari-iletisim", label: "Ticari İleti Onayı" },
+  { to: "/yasal", hash: "#cocuk-guvenligi", label: "Çocuk Güvenliği" },
+  { to: "/yasal", hash: "#acik-riza", label: "Açık Rıza Metni" },
+  { to: "/yasal", hash: "#cerez", label: "Çerez Politikası" },
 ];
 
 const socialLinks = [
   { href: "#", icon: Instagram, label: "Instagram" },
   { href: "#", icon: Twitter, label: "Twitter" },
-  { href: "mailto:destek@campusgo.app", icon: Mail, label: "E-posta" },
+  { href: "mailto:info@campusgo.app", icon: Mail, label: "E-posta" },
 ];
 
 export default function Footer() {
